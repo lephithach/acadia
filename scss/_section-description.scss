@@ -1,0 +1,55 @@
+.section-description {
+  margin: 1rem 0;
+
+  .heading {
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 2rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30%;
+      height: 3px;
+      background-color: #000;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      width: 20%;
+      height: 3px;
+      background-color: #000;
+    }
+  }
+
+  .description {
+    line-height: 2;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section-description {
+    .heading {
+      &::before {
+        content: "";
+        width: 50%;
+        height: 3px;
+      }
+
+      &::after {
+        content: "";
+        width: 30%;
+        height: 3px;
+      }
+    }
+
+    .description {
+      margin-top: 2.5rem;
+    }
+  }
+}
