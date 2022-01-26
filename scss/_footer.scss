@@ -31,11 +31,19 @@
 
   .social-container {
     display: flex;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     justify-content: center;
 
     .social-link + .social-link {
-      margin-left: 0.8rem;
+      margin-left: 1.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    .social-container {
+      font-size: 1.8rem;
     }
   }
 }
